@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Habla inglés con confianza en 12 meses sin salir de CDMX. Programa conversacional con metodología CLIL para adultos que trabajan. Agenda una asesoría con un especialista.">
+    <meta name="keywords"
+        content="escuela de inglés CDMX, clases de inglés para adultos, inglés conversacional, metodología CLIL, inglés profesional México">
+    <title>Glish | Habla Inglés con Confianza en CDMX - Programa para Adultos Profesionales</title>
+    <!-- Google Fonts - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         URGENCY TIMER BAR
+    ════════════════════════════════════════════════════════════════════════ -->
+    <div class="urgency-bar" id="urgency-bar">
+        <div class="container urgency-bar__container">
+            <span class="urgency-bar__text">🔥 <strong>Descuento especial:</strong> Agenda en los próximos</span>
+            <div class="countdown" id="countdown">
+                <div class="countdown__item">
+                    <span class="countdown__number" id="countdown-minutes">15</span>
+                    <span class="countdown__label">min</span>
+                </div>
+                <span class="countdown__separator">:</span>
+                <div class="countdown__item">
+                    <span class="countdown__number" id="countdown-seconds">00</span>
+                    <span class="countdown__label">seg</span>
+                </div>
+            </div>
+            <span class="urgency-bar__text">y obtén <strong>15% de descuento</strong> en tu primer mes</span>
+        </div>
+    </div>
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         HEADER - Minimal with Logo + CTA
+    ════════════════════════════════════════════════════════════════════════ -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <img src="assets/images/glish-logo.png" alt="Glish" class="header__logo-img">
+            </a>
+            <a href="#formulario-hero" class="btn btn--primary header__cta">
+                Agenda una asesoría con un especialista
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SECTION 1: HERO - VSL + Form
+        ════════════════════════════════════════════════════════════════════ -->
+        <section class="hero" id="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        El inglés no se memoriza: <span class="highlight">se comprende, se vive y se utiliza.</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        Domina el inglés profesional en <strong>12 meses</strong> con metodología <strong>CLIL</strong>
+                        y especialización técnica para tu industria. Deja de estudiar gramática aislada y empieza a usar
+                        el inglés como una herramienta de crecimiento profesional.
+                    </p>
+                    <ul class="hero__bullets" style="margin-bottom: 30px; list-style: none; padding: 0;">
+                        <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 10px;">
+                            <span style="color: var(--accent-color); font-weight: bold;">✓</span>
+                            <span>Especialización técnica para más de <strong>300 profesiones</strong>.</span>
+                        </li>
+                        <li style="margin-bottom: 15px; display: flex; align-items: start; gap: 10px;">
+                            <span style="color: var(--accent-color); font-weight: bold;">✓</span>
+                            <span>Modelo Híbrido: Coaches certificados + Plataforma <strong>ClickOn</strong>.</span>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 10px;">
+                            <span style="color: var(--accent-color); font-weight: bold;">✓</span>
+                            <span><strong>Sin libros ni tareas:</strong> Aprendizaje dinámico y sostenible.</span>
+                        </li>
+                    </ul>
+                    <!-- VSL Video -->
+                    <div class="hero__video">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/WTy3utex21w"
+                                title="Glish CDMX - Habla inglés con confianza" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p class="hero__video-caption">
+                            🎬 Mira en 7 minutos cómo nuestros alumnos pasaron de entender a hablar inglés con confianza
+                            en CDMX
+                        </p>
+                    </div>
+                </div>
+                <!-- Lead Capture Form -->
+                <div class="hero__form-container" id="formulario-hero">
+                    <div class="form-card">
+                        <div class="form-card__header">
+                            <h2 class="form-card__title">Agenda una asesoría con un especialista</h2>
+                            <p class="form-card__subtitle">Agenda una asesoría con un especialista y descubre otra forma
+                                de aprender inglés con Glish</p>
+                        </div>
+                        <form class="lead-form" id="hero-form">
+                            <div class="form-group">
+                                <label for="hero-name">Nombre completo</label>
+                                <input type="text" id="hero-name" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="hero-whatsapp">WhatsApp</label>
+                                <div class="input-with-icon">
+                                    <span class="input-icon">📱</span>
+                                    <input type="tel" id="hero-whatsapp" name="whatsapp" placeholder="55 1234 5678"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="hero-schedule">Horario preferido para contacto</label>
+                                <select id="hero-schedule" name="schedule" required>
+                                    <option value="" disabled selected>Selecciona un horario</option>
+                                    <option value="mañana">Mañana (9am - 12pm)</option>
+                                    <option value="tarde">Tarde (12pm - 6pm)</option>
+                                    <option value="noche">Noche (6pm - 9pm)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn--cta btn--full">
+                                Agenda una asesoría con un especialista
+                                <span class="btn-arrow">→</span>
+                            </button>
+                        </form>
+                        <div class="form-divider">
+                            <span>o también puedes</span>
+                        </div>
+                        <a href="https://wa.me/5213314360000?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20Glish%20y%20quiero%20agendar%20mi%20diagn%C3%B3stico%20gratuito%20de%20ingl%C3%A9s%20%F0%9F%91%8B"
+                            class="btn btn--whatsapp btn--full" target="_blank" rel="noopener">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            Escríbenos por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative Elements -->
+            <div class="hero__decoration hero__decoration--1"></div>
+            <div class="hero__decoration hero__decoration--2"></div>
+        </section>
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SECTION 2: BENEFITS
+        ════════════════════════════════════════════════════════════════════ -->
+        <section class="benefits" id="beneficios">
+            <div class="container">
+                <h2 class="section-title">¿Por qué los profesionales eligen <span class="highlight">Glish</span>?</h2>
+                <div class="benefits__grid">
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">🧠</div>
+                        <h3 class="benefit-card__title">Metodología CLIL</h3>
+                        <p class="benefit-card__text">Integración simultánea de contenido, cognición y comunicación.
+                            Aprendes inglés con un propósito real y funcional.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">💼</div>
+                        <h3 class="benefit-card__title">Especialización Profesional</h3>
+                        <p class="benefit-card__text">Vocabulario y contextos reales para más de <strong>300
+                                profesiones</strong>. Valor inmediato para tu carrera.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">🤝</div>
+                        <h3 class="benefit-card__title">Acompañamiento Humano</h3>
+                        <p class="benefit-card__text">Nunca aprendes solo. Nuestros coaches certificados te guían y
+                            acompañan en cada paso de tu proceso.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">💻</div>
+                        <h3 class="benefit-card__title">Plataforma ClickOn</h3>
+                        <p class="benefit-card__text">Refuerza pronunciación y audición con herramientas de IA alineadas
+                            a tu especialidad profesional.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">🚫</div>
+                        <h3 class="benefit-card__title">Sin Libros ni Tareas</h3>
+                        <p class="benefit-card__text">Experiencias de aprendizaje significativas y sostenibles. Olvida
+                            el modelo aburrido y tradicional.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">📈</div>
+                        <h3 class="benefit-card__title">Proceso Progresivo</h3>
+                        <p class="benefit-card__text">Un camino estructurado hacia la fluidez total en 12 meses,
+                            diseñado específicamente para adultos.</p>
+                    </div>
+                </div>
+                <div class="benefits__cta">
+                    <a href="#formulario-hero" class="btn btn--secondary">
+                        Descubre otra forma de aprender inglés con Glish → Agenda una asesoría
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SECTION 3: WHY DIFFERENT
+        ════════════════════════════════════════════════════════════════════ -->
+        <section class="different" id="diferencia">
+            <div class="container">
+                <h2 class="section-title">Glish no es una escuela tradicional.<br><span class="highlight">Esto es lo que
+                        nos hace diferentes:</span></h2>
+                <div class="comparison-table">
+                    <div class="comparison-table__header">
+                        <div class="comparison-table__col comparison-table__col--old">
+                            <span class="comparison-label comparison-label--old">❌ Escuelas tradicionales</span>
+                        </div>
+                        <div class="comparison-table__col comparison-table__col--new">
+                            <span class="comparison-label comparison-label--new">✅ En Glish</span>
+                        </div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell comparison-cell--old">
+                            Libros de texto y gramática aislada
+                        </div>
+                        <div class="comparison-cell comparison-cell--new">
+                            <strong>Metodología CLIL:</strong> Contenido real y útil
+                        </div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell comparison-cell--old">
+                            Tareas tediosas y estudio aburrido
+                        </div>
+                        <div class="comparison-cell comparison-cell--new">
+                            <strong>Sin libros ni tareas</strong>, aprendizaje dinámico
+                        </div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell comparison-cell--old">
+                            Vocabulario genérico y plano
+                        </div>
+                        <div class="comparison-cell comparison-cell--new">
+                            <strong>+300 especialidades</strong> técnicas/profesionales
+                        </div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell comparison-cell--old">
+                            Grupos grandes y poca participación
+                        </div>
+                        <div class="comparison-cell comparison-cell--new">
+                            <strong>Grupos pequeños</strong> 100% interactivos
+                        </div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell comparison-cell--old">
+                            Sin seguimiento real
+                        </div>
+                        <div class="comparison-cell comparison-cell--new">
+                            <strong>Acompañamiento Humano</strong> y coach personalizado
+                        </div>
+                    </div>
+                </div>
+                <div class="different__message">
+                    <p class="different__text">
+                        <strong>No eres un número más.</strong> En Glish sabemos tu nombre, tu meta y tu nivel real. Por
+                        eso nuestros alumnos logran hablar inglés con seguridad en menos de un año.
+                    </p>
+                    <a href="#formulario-hero" class="btn btn--cta">
+                        Agenda una asesoría con un especialista
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SECTION 4: SOCIAL PROOF / TESTIMONIALS
+        ════════════════════════════════════════════════════════════════════ -->
+        <section class="testimonials" id="testimonios">
+            <div class="container">
+                <h2 class="section-title">Lo que dicen nuestros alumnos en <span class="highlight">CDMX</span></h2>
+                <div class="testimonials__grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__header">
+                            <div class="testimonial-card__avatar">
+                                <span>MG</span>
+                            </div>
+                            <div class="testimonial-card__info">
+                                <h4 class="testimonial-card__name">María González</h4>
+                                <p class="testimonial-card__role">Gerente de Proyectos en Startup Tech</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card__rating">⭐⭐⭐⭐⭐</div>
+                        <blockquote class="testimonial-card__quote">
+                            "Llegué sin poder hablar en juntas. Después de 6 meses en Glish ya lidero llamadas con
+                            clientes de USA. <strong>La metodología CLIL cambió todo para mí.</strong>"
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__header">
+                            <div class="testimonial-card__avatar">
+                                <span>RH</span>
+                            </div>
+                            <div class="testimonial-card__info">
+                                <h4 class="testimonial-card__name">Roberto Hernández</h4>
+                                <p class="testimonial-card__role">Ingeniero de Software</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card__rating">⭐⭐⭐⭐⭐</div>
+                        <blockquote class="testimonial-card__quote">
+                            "Probé apps, YouTube, otras escuelas... nada funcionó. En Glish entendí que necesitaba
+                            HABLAR, no solo estudiar. <strong>Ahora tengo entrevistas en inglés sin miedo.</strong>"
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__header">
+                            <div class="testimonial-card__avatar">
+                                <span>AM</span>
+                            </div>
+                            <div class="testimonial-card__info">
+                                <h4 class="testimonial-card__name">Ana Martínez</h4>
+                                <p class="testimonial-card__role">Consultora Independiente</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card__rating">⭐⭐⭐⭐⭐</div>
+                        <blockquote class="testimonial-card__quote">
+                            "Los horarios después de oficina y el enfoque adulto fueron clave. <strong>En 8 meses pasé
+                                de entender a negociar contratos en inglés.</strong>"
+                        </blockquote>
+                    </div>
+                </div>
+                <!-- Company Logos -->
+                <div class="testimonials__logos">
+                    <p class="testimonials__logos-title">Nuestros alumnos trabajan en:</p>
+                    <div class="logos-grid">
+                        <div class="logo-item">Google</div>
+                        <div class="logo-item">Amazon</div>
+                        <div class="logo-item">Santander</div>
+                        <div class="logo-item">BBVA</div>
+                        <div class="logo-item">Mercado Libre</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SECTION 4.5: VIDEO TESTIMONIALS
+        ════════════════════════════════════════════════════════════════════ -->
+        <section class="video-testimonials" id="video-testimonios">
+            <div class="container">
+                <h2 class="section-title">Escucha a nuestros alumnos <span class="highlight">en su propia voz</span>
+                </h2>
+                <p class="section-subtitle">Historias reales de profesionales que transformaron su inglés con Glish</p>
+                <div class="video-testimonial__wrapper">
+                    <div class="video-wrapper video-wrapper--large">
+                        <iframe src="https://www.youtube.com/embed/4joWui-1fYg" title="Testimonios de alumnos Glish"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-testimonial__cta">
+                        <p class="video-testimonial__text">¿Listo para ser el próximo caso de éxito?</p>
+                        <a href="#formulario-hero" class="btn btn--cta">
+                            Agenda tu diagnóstico gratis →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SECTION 5: HOW IT WORKS
+        ════════════════════════════════════════════════════════════════════ -->
+        <section class="how-it-works" id="como-funciona">
+            <div class="container">
+                <h2 class="section-title">El Proceso Progresivo Glish<br><span class="highlight">Tu camino hacia la
+                        fluidez total</span></h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-card__header">
+                            <span class="step-card__label">Mes 2</span>
+                            <h3 class="step-card__title">First Steps</h3>
+                        </div>
+                        <p class="step-card__text">Comunicación básica, expresar gustos, opiniones y preguntas
+                            generales.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card__header">
+                            <span class="step-card__label">Mes 4</span>
+                            <h3 class="step-card__title">Beginner</h3>
+                        </div>
+                        <p class="step-card__text">Dominio de instrucciones, ideas claras y uso de pasado y presente.
+                        </p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card__header">
+                            <span class="step-card__label">Mes 6</span>
+                            <h3 class="step-card__title">Pre-Intermediate</h3>
+                        </div>
+                        <p class="step-card__text">Capacidad de narrar experiencias, historias, hechos y posibilidades.
+                        </p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card__header">
+                            <span class="step-card__label">Mes 8</span>
+                            <h3 class="step-card__title">Intermediate</h3>
+                        </div>
+                        <p class="step-card__text">Conversación formal y estructuras de comunicación más natural y
+                            nativa.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card__header">
+                            <span class="step-card__label">Mes 10</span>
+                            <h3 class="step-card__title">Upper Intermediate</h3>
+                        </div>
+                        <p class="step-card__text">Debate de ideas complejas y comunicación detallada de planes a
+                            futuro.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-card__header">
+                            <span class="step-card__label">Mes 12</span>
+                            <h3 class="step-card__title">Advanced</h3>
+                        </div>
+                        <p class="step-card__text">Usuario funcional total. Conocimiento de funciones únicas del idioma
+                            y matices culturales.</p>
+                    </div>
+                </div>
+                <!-- Perfil de Egreso Highligth -->
+                <div class="exit-profile">
+                    <h3 class="exit-profile__title">Al finalizar tu proceso serás capaz de:</h3>
+                    <ul class="exit-profile__list">
+                        <li>Entablar conversaciones complejas con seguridad total.</li>
+                        <li>Utilizar vocabulario técnico de tu especialidad profesional.</li>
+                        <li>Actuar con inteligencia cultural en entornos globales.</li>
+                        <li>Aprender de forma autónoma con recursos digitales.</li>
+                    </ul>
+                </div>
+                <div class="how-it-works__cta">
+                    <a href="#formulario-hero" class="btn btn--cta btn--large">
+                        Agenda una asesoría con un especialista
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SECTION 6: LOCATION (CDMX)
+        ════════════════════════════════════════════════════════════════════ -->
+        <section class="location" id="ubicacion">
+            <div class="container">
+                <h2 class="section-title">Estamos en <span class="highlight">CDMX</span>, cerca de ti</h2>
+                <div class="location__grid">
+                    <div class="map-container"
+                        style="height: 450px; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl);">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6548177439363!2d-99.2014639!3d19.4273874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201e8555079a7%3A0xe7448d38787f78c8!2sGlish%20Engish!5e0!3m2!1ses-419!2smx!4v1737568850000!5m2!1ses-419!2smx"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="location__info">
+                        <p class="location__description">
+                            Nuestras instalaciones están en una ubicación céntrica, segura y bien conectada para
+                            profesionales que trabajan en CDMX.
+                        </p>
+                        <ul class="location__features">
+                            <li>
+                                <span class="location__feature-icon">📍</span>
+                                <strong>Dakota 95-local 11 y 12, Nápoles, CDMX.</strong>
+                            </li>
+                            <li>
+                                <span class="location__feature-icon">🚗</span>
+                                Estacionamiento público y fácil acceso.
+                            </li>
+                            <li>
+                                <span class="location__feature-icon">☕</span>
+                                En el corazón de la Nápoles, rodeado de cafés y vida profesional.
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5213314360000?text=Hola%2C%20quiero%20agendar%20una%20visita%20con%20un%20asesor%20en%20la%20sucursal%20N%C3%A1poles"
+                            class="btn btn--whatsapp" target="_blank" rel="noopener">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            Agenda una visita con un asesor
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SECTION 7: FAQs + FINAL CTA
+        ════════════════════════════════════════════════════════════════════ -->
+        <section class="faq" id="preguntas">
+            <div class="container">
+                <h2 class="section-title">Preguntas frecuentes</h2>
+                <div class="faq__accordion">
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>¿Qué es la metodología CLIL y por qué es diferente?</span>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>CLIL significa Content and Language Integrated Learning. En Glish aprendes inglés
+                                mientras interactúas con temas relevantes de ciencia, tecnología y cultura. No memorizas
+                                reglas, sino que usas el idioma para desarrollar pensamiento crítico desde el primer
+                                día.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>¿Cómo funciona la especialización por profesión?</span>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Contamos con contenido adaptado a más de 300 profesiones. Aprenderás el vocabulario
+                                técnico y los contextos reales de tu industria (ingeniería, marketing, medicina, etc.)
+                                para que tu aprendizaje tenga valor profesional inmediato.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>¿Qué es la plataforma ClickOn?</span>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Es nuestro complemento digital diseñado para fortalecer tu pronunciación, audición y
+                                vocabulario autónomo. La plataforma utiliza herramientas de IA alineadas a tu
+                                especialidad profesional.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>¿Cuánto tiempo dura el programa completo?</span>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>El Proceso Glish está diseñado para que logres ser un usuario funcional del idioma en 12
+                                meses, pasando por 6 etapas progresivas que consolidan tu seguridad al hablar.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>¿Las clases son individuales o en grupo?</span>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Nuestras clases son en grupos pequeños dirigidas por coaches certificados. Esto fomenta
+                                la interacción real y el aprendizaje colaborativo, permitiendo que todos participen
+                                activamente.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question" aria-expanded="false">
+                            <span>¿Realmente no hay libros ni tareas?</span>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p>Exacto. Nuestra filosofía es que el inglés se comprende, se vive y se utiliza. Eliminamos
+                                el modelo tradicional de libros aburridos y tareas mecánicas para priorizar experiencias
+                                de aprendizaje significativas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ═══════════════════════════════════════════════════════════════════
+             FINAL CTA SECTION
+        ════════════════════════════════════════════════════════════════════ -->
+        <section class="final-cta" id="agendar">
+            <div class="container">
+                <div class="final-cta__content">
+                    <h2 class="final-cta__title">Da el primer paso hoy:<br><span class="highlight">agenda una asesoría
+                            con un especialista</span></h2>
+                    <p class="final-cta__subtitle">Agenda una asesoría con un especialista y descubre otra forma de
+                        aprender inglés con Glish</p>
+                    <div class="final-cta__form-container">
+                        <form class="lead-form" id="final-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="final-name">Nombre completo</label>
+                                    <input type="text" id="final-name" name="name" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="final-whatsapp">WhatsApp</label>
+                                    <input type="tel" id="final-whatsapp" name="whatsapp" placeholder="55 1234 5678"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="final-schedule">Horario preferido</label>
+                                    <select id="final-schedule" name="schedule" required>
+                                        <option value="" disabled selected>Selecciona</option>
+                                        <option value="mañana">Mañana</option>
+                                        <option value="tarde">Tarde</option>
+                                        <option value="noche">Noche</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn--cta btn--large">
+                                Agenda tu diagnóstico gratis
+                                <span class="btn-arrow">→</span>
+                            </button>
+                        </form>
+                        <div class="final-cta__whatsapp">
+                            <span>¿Prefieres escribirnos directamente?</span>
+                            <a href="https://wa.me/5213314360000?text=Hola%2C%20quiero%20agendar%20mi%20diagn%C3%B3stico%20gratuito%20en%20Glish%20CDMX%20%F0%9F%91%8B"
+                                class="btn btn--whatsapp-outline" target="_blank" rel="noopener">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                </svg>
+                                Prefiero escribir por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative Elements -->
+                <div class="final-cta__decoration final-cta__decoration--1"></div>
+                <div class="final-cta__decoration final-cta__decoration--2"></div>
+            </div>
+        </section>
+    </main>
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         FOOTER
+    ════════════════════════════════════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <img src="assets/images/glish-logo.png" alt="Glish" class="footer__logo-img">
+                </div>
+                <p class="footer__text">© 2026 Glish. Todos los derechos reservados. CDMX, México.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5213314360000?text=Hola%2C%20vengo%20de%20la%20p%C3%A1gina%20de%20Glish%20y%20quiero%20agendar%20mi%20diagn%C3%B3stico%20gratuito%20de%20ingl%C3%A9s%20%F0%9F%91%8B"
+        class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
